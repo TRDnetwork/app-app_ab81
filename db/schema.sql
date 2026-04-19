@@ -1,0 +1,1 @@
+-- No database required — all functionality is static or handled by Vercel serverless functions (e.g. api/contact.ts via Resend). Supabase is not used for auth, storage, or data.
