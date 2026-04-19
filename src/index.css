@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-[#1a2e1a];
+    font-feature-settings: 'kern';
+  }
+  body {
+    @apply bg-[#faf8f5] font-sans leading-[1.6] antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold text-[#1a2e1a] leading-tight;
+    letter-spacing: -0.05em;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-5xl mx-auto px-6 py-12;
+  }
+  .section {
+    @apply mb-16 last:mb-0;
+  }
+  .visually-hidden {
+    @apply absolute h-px w-px overflow-hidden clip clip-path-none whitespace-nowrap border-0 p-0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
